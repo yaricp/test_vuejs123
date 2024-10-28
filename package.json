@@ -1,0 +1,93 @@
+{
+  "name": "droneselfie-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm": "^8.15.0",
+    "node": "^16.17.0"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve-1": "vue-cli-service serve --host=192.168.168.2 --port=8080",
+    "serve-2": "vue-cli-service serve --host=192.168.194.89 --port=8080",
+    "serve-3": "vue-cli-service serve --host=192.168.195.89 --port=8080",
+    "serve-4": "vue-cli-service serve --host=192.168.196.89 --port=8080",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@mdi/font": "^7.0.96",
+    "aws-sdk": "^2.1181.0",
+    "axios": "^0.18.0",
+    "core-js": "^3.4.3",
+    "html5-qrcode": "^2.3.8",
+    "match-sorter": "^7.0.0",
+    "mjml": "^4.13.0",
+    "register-service-worker": "^1.0.0",
+    "sass-loader": "^13.0.2",
+    "typesafe-vuex": "^3.1.1",
+    "vee-validate": "^2.1.7",
+    "vue": "^2.5.22",
+    "vue-class-component": "^6.0.0",
+    "vue-cli": "^2.9.6",
+    "vue-i18n": "8",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.0.2",
+    "vuetify": "^2.6.7",
+    "vuetify-datetime-picker": "^2.1.1",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.5.0",
+    "@types/jest": "^23.3.13",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-pwa": "^4.1.1",
+    "@vue/cli-plugin-typescript": "^4.1.1",
+    "@vue/cli-plugin-unit-jest": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/test-utils": "^1.0.0-beta.28",
+    "babel-core": "7.0.0-bridge.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4",
+    "vue-cli-plugin-i18n": "^2.3.1",
+    "vue-cli-plugin-vuetify": "^2.0.2",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "vue",
+      "ts",
+      "tsx"
+    ],
+    "transform": {
+      "^.+\\.vue$": "vue-jest",
+      ".+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "testMatch": [
+      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
